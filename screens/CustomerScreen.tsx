@@ -1,4 +1,4 @@
-import { Text, ScrollView, ActivityIndicator } from "react-native";
+import { ScrollView, ActivityIndicator } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useTailwind } from "tailwind-rn/dist";
 import {

@@ -22,7 +22,8 @@ const TabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarActiveTintColor: "#59C1CC",
+        tabBarActiveTintColor:
+          route.name === "Customers" ? "#59C1CC" : "#EB6A7C",
         tabBarInactiveTintColor: "gray",
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Customers") {
