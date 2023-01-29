@@ -8,7 +8,7 @@ import OrderModalScreen from "../screens/OrderModalScreen";
 export type RootStackParamList = {
   Main: undefined;
   MyModal: { userId: string; name: string };
-  Order: { Order: any };
+  Order: { order: Order };
 };
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
@@ -25,12 +25,12 @@ const RootNavigator = () => {
           component={ModalScreen}
         />
       </RootStack.Group>
-      <RootStack.Group screenOptions={{ presentation: "fullScreenModal" }}>
-        <RootStack.Screen
-          options={{ headerShown: false }}
-          name="Order"
-          component={OrderModalScreen}
-        />
+      <RootStack.Group
+        screenOptions={{
+          presentation: "fullScreenModal",
+        }}
+      >
+        <RootStack.Screen name="Order" component={OrderModalScreen} />
       </RootStack.Group>
     </RootStack.Navigator>
   );

@@ -1,10 +1,4 @@
-import {
-  View,
-  TouchableOpacity,
-  Text,
-  FlatList,
-  ScrollView,
-} from "react-native";
+import { View, TouchableOpacity, Text, FlatList } from "react-native";
 import React from "react";
 import { Icon } from "@rneui/themed";
 import { useTailwind } from "tailwind-rn/dist";
